@@ -1,0 +1,323 @@
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* İşte o sağdaki beyaz boşluğu yok eden komut */
+}
+
+body {
+    background-color: #2c3e50;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Başlıklar (h1, h2, h3) için özel ayar */
+h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+header {
+    background-color: #1a252f;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f1c40f;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-link:hover {
+    color: #f1c40f;
+}
+
+
+.hero-bolumu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    text-align: left;
+}
+
+.hero-yazi {
+    max-width: 60%;
+    color: white;
+}
+
+.hero-yazi h3 {
+    color: #f1c40f;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.hero-yazi h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero-yazi p {
+    font-size: 18px;
+    color: #bdc3c7;
+    line-height: 1.6;
+}
+
+.hero-resim img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f1c40f;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+}
+
+.buton-sosyal {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid #f1c40f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.buton-sosyal:hover {
+    background-color: #f1c40f;
+    color: #2c3e50;
+}
+
+
+.yetenekler-bolumu {
+    padding: 20px 10%;
+    text-align: left;
+    color: white;
+}
+
+.yetenek-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.yetenek-kutu {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #f1c40f;
+    width: 45%;
+    flex-grow: 1;
+}
+
+.yetenek-kutu h3 {
+    margin-top: 0;
+    color: white;
+}
+
+.yetenek-kutu h3 {
+    margin-top: 0;
+    color: white;
+}
+
+.yetenek-kutu p {
+    color: #bdc3c7;
+    font-size: 14px;
+}
+
+
+.proje-konteyner {
+    background-color: #2c3e50;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.vitrin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.proje-karti {
+    background-color: #34495e;
+    border: 1px solid #7f8c8d;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0;
+    width: 300px; /* Masaüstünde sabit genişlik */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.proje-karti:hover {
+    transform: scale(1.05);
+    border-color: #f1c40f;
+    cursor: pointer;
+}
+
+
+.proje-resmi {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    object-position: top; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #333;
+}
+
+.buton {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.buton:hover {
+    background-color: #c0392b; 
+}
+
+
+.iletisim-bolumu {
+    background-color: #1a252f;
+    color: white;
+    padding: 60px 20px;
+    margin-top: 50px;
+    border-top: 4px solid #f1c40f;
+    
+
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+.iletisim-bolumu p {
+    color: #bdc3c7;
+    max-width: 600px;
+    margin: 10px auto 30px auto;
+}
+
+.mail-butonu {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.mail-butonu:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+.footer-alt {
+    margin-top: 70px;
+    border-top: 1px solid #34495e;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.footer-sosyal a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.footer-sosyal a:hover {
+    color: #f1c40f;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+
+    .profil-kutusu, .hakkimda-kutusu, .proje-karti {
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 { font-size: 24px; }
+    p { font-size: 16px; }
+
+ 
+    .vitrin {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+    }
+    
+  
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    .menu-link {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+
+    .hero-bolumu {
+        flex-direction: column-reverse; 
+        text-align: center;
+        padding: 30px 5%;
+    }
+    
+    .hero-yazi {
+        max-width: 100%;
+    }
+    
+    .hero-resim img {
+        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.footer-sosyal a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: 0.3s;
+    text-decoration: none; 
+    border: none; 
+    display: inline-block; 
+}
